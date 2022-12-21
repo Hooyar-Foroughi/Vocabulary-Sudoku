@@ -8,7 +8,7 @@ In the *Listening Comprehension* game mode, words within grid cells will not be 
 
 ---
 
-> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/MainMenu.png?raw=true" alt="Main Menu" width="240"/>
-> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/NewGameMenu.png?raw=true" alt="New Game Menu" width="228"/>
-> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/Gameboard_9x9.png?raw=true" alt="New Game Menu" width="236"/>
-> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/ListeningMode.png?raw=true" alt="New Game Menu" width="239"/>
+> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/MainMenu.png?raw=true" alt="Main Menu" width="211"/>
+> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/NewGameMenu.png?raw=true" alt="New Game Menu" width="200"/>
+> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/Gameboard_9x9.png?raw=true" alt="New Game Menu" width="207"/>
+> <img src="https://github.com/Hooyar-Foroughi/Vocabulary-Sudoku/blob/main/Screenshots/ListeningMode.png?raw=true" alt="New Game Menu" width="209"/>
