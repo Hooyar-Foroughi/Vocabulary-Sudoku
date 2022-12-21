@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:background="@color/FloralWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmpt276.Gamma.mainMenu">
+
+
+    <Button
+        android:id="@+id/newGame"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/tan_filled_box"
+        android:text="New Game"
+        android:textAllCaps="false"
+        android:textColor="@color/SaddleBrown"
+        android:textSize="@dimen/_22sdp"
+        app:backgroundTint="@color/Wheat"
+        app:layout_constraintBottom_toTopOf="@+id/continueGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:strokeColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/continueGame"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:background="@drawable/tan_filled_box"
+        android:text="Continue Game"
+        android:textAllCaps="false"
+        android:textColor="@color/SaddleBrown"
+        android:textSize="@dimen/_19sdp"
+        android:visibility="invisible"
+        app:backgroundTint="@color/Wheat"
+        app:layout_constraintBottom_toTopOf="@+id/Help_Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newGame"
+        app:strokeColor="#FFFFFF" />
+
+
+
+    <Button
+        android:id="@+id/Help_Button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="@drawable/tan_filled_box"
+        android:text="@string/help"
+        android:textAllCaps="false"
+        android:textColor="@color/SaddleBrown"
+        android:textSize="@dimen/_16sdp"
+        app:backgroundTint="@color/Wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continueGame" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/tan_box"
+        android:gravity="center"
+        android:text="Vocabulary Sudoku"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/_22sdp"
+        android:textStyle="bold"
+        android:textColor="@color/SaddleBrown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/newGame"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

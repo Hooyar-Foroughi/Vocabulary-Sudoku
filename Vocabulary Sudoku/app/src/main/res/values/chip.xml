@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customChip" parent="Widget.MaterialComponents.Chip.Filter" >
+
+        <item name="chipBackgroundColor">@color/chip_background</item>
+
+        <item name="android:textColor">@color/chip_text_color</item>
+
+    </style>
+
+</resources>

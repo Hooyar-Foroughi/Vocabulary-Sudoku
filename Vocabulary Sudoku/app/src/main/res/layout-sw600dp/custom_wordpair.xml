@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/FloralWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmpt276.Gamma.wordPair_custom">
+
+    <ImageButton
+        android:id="@+id/CusBack_Button"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:contentDescription="@string/Play_Button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/Custom_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/custom_wp_grid"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/Custom_title"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:background="@drawable/tan_box"
+        android:gravity="center"
+        android:text="Add Word Pairs"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/_23sdp"
+        android:textColor="@color/SaddleBrown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/custom_wp_grid"/>
+
+    <ScrollView
+        android:id="@+id/custom_wp_grid"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_320sdp"
+        app:layout_constraintBottom_toTopOf="@id/Custom_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Custom_title"
+        android:background="@color/Wheat">
+
+        <TableLayout
+            android:id="@+id/table_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/wp01"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/RosyBrown"
+                    android:gravity="center"
+                    android:text="English"
+                    android:textColor="@color/Linen"
+                    android:textSize="@dimen/_20sdp"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/wp02"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@color/RosyBrown"
+                    android:gravity="center"
+                    android:text="Spanish"
+                    android:textColor="@color/Linen"
+                    android:textSize="@dimen/_20sdp"
+                    tools:ignore="SpeakableTextPresentCheck,TextContrastCheck" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp11"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp12"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp21"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp22"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp31"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp32"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp41"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp42"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp51"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp52"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp61"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp62"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp71"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp72"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp81"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp82"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp91"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp92"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp101"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp102"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp111"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp112"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_floral"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/wp121"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+
+                <EditText
+                    android:id="@+id/wp122"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/grid_border_linen"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text=""
+                    android:gravity="center"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="66dp"
+                    tools:layout_editor_absoluteY="36dp" />
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Custom_save_button"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:background="@drawable/tan_filled_box"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/SaddleBrown"
+        android:textSize="@dimen/_16sdp"
+        app:backgroundTint="@color/Wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_wp_grid" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

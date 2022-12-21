@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true"  android:drawable="@color/RosyBrown">
+        <solid  android:drawable="@color/Wheat"></solid>
+        <stroke android:width=".5dp" android:drawable="@color/SaddleBrown"></stroke>
+    </item>
+
+    <item android:state_activated="true"  android:drawable="@color/LightGrey">
+        <solid  android:drawable="@color/Wheat"></solid>
+        <stroke android:width=".5dp" android:drawable="@color/SaddleBrown"></stroke>
+    </item>
+
+    <item>
+        <shape android:state_activated="false" android:state_selected="false" android:shape="rectangle">
+            <solid  android:color="@color/Wheat"></solid>
+            <stroke android:width=".5dp" android:drawable="@color/SaddleBrown"></stroke>
+        </shape>
+    </item>
+
+
+</selector>
