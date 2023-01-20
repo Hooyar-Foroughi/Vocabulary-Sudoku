@@ -120,6 +120,7 @@ public class gameBoard extends ViewModel
             }
         }
     }
+
     // Sets the wordset to entered array
     private void setWordset(wordPair[] wpL) throws Exception
     {
