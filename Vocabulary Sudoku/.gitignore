@@ -6,3 +6,4 @@
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/buildOutputCleanup/outputFiles.bin
 local.properties
+.DS_Store
